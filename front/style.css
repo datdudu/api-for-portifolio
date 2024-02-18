@@ -1,0 +1,48 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 223, 181);
+}
+
+.button-grid{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.button-grid button {
+    width: 400px;
+    height: 200px;
+    border: none;
+    border-radius: 20px;
+}
+
+.button-grid button:hover {
+    transform: translate3D(0,-1px,0) scale(1.03);
+    transition: 1s;
+}
+
+.button-grid .bt-get {
+    background-color: rgb(62, 153, 77);
+    color: white;
+}
+
+.button-grid .bt-post {
+    background-color: rgb(62, 94, 153);
+    color: white;
+}
+
+.button-grid .bt-put {
+    background-color: rgb(243, 129, 52);
+    color: white;
+}
+
+.button-grid .bt-delete {
+    background-color: rgb(209, 28, 28);
+    color: white;
+}
